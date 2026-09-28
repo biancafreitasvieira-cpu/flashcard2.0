@@ -2,115 +2,115 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    }
-    
-    body {
+}
+
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #f5f2f2;
+    /* Gradiente do azul-marinho escuro para um azul levemente mais claro */
+    background: linear-gradient(180deg, #0d1b2a 0%, #1b263b 100%);
     font-family: Arial, sans-serif;
-    }
-    
-    .cabecalho {
+}
+
+.cabecalho {
     padding: 15px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #7e3e1c;
-    }
-    
-    .cabecalho-link {
+    background-color: #0d1b2a;
+}
+
+.cabecalho-link {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    }
-    
-    h1 {
+}
+
+h1 {
     color: #fff;
     font-size: 24px;
-    }
-    
-    main {
+}
+
+main {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 30px 15px;
-    }
-    
-    main h2 {
-    color: #333;
+}
+
+main h2 {
+    color: #ffffff;
     margin-bottom: 25px;
     text-align: center;
-    }
-    
-    section {
+}
+
+section {
     display: flex;
-    flex-wrap: wrap; /* Permite que os cartões fiquem lado a lado e dobrem de linha em telas menores */
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     max-width: 1200px;
-    }
-    
-    /* Estrutura do Cartão */
-    .cartao {
+}
+
+/* Estrutura do Cartão */
+.cartao {
     width: 260px;
-    height: 320px; /* Ajustado de 200px para 320px para caber a imagem e o texto confortavelmente */
-    perspective: 1000px; /* Recomendado para efeitos 3D */
-    }
-    
-    .cartao-interno {
+    height: 320px;
+    perspective: 1000px;
+}
+
+.cartao-interno {
     position: relative;
     width: 100%;
     height: 100%;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-    }
-    
-    .cartao:hover .cartao-interno {
+}
+
+.cartao:hover .cartao-interno {
     transform: rotateY(180deg);
-    }
-    
-    .cartao-frente,
-    .cartao-verso {
+}
+
+.cartao-frente,
+.cartao-verso {
     position: absolute;
     width: 100%;
     height: 100%;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     backface-visibility: hidden;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #ffffff; /* Adicionado fundo para cobrir o verso na rotação */
-    }
-    
-    .cartao-imagem {
+    background-color: #415a77; /* Azul moderado/suave para o cartão */
+}
+
+.cartao-imagem {
     width: 100%;
     height: 160px;
-    object-fit: cover; /* Evita que a imagem fique distorcida */
-    }
-    
-    .cartao-frente p,
-    .cartao-verso p {
+    object-fit: cover;
+}
+
+.cartao-frente p,
+.cartao-verso p {
     padding: 15px;
     font-size: 14px;
-    color: #333;
+    color: #ffffff;
     line-height: 1.4;
-    }
-    
-    .cartao-verso {
+}
+
+.cartao-verso {
     transform: rotateY(180deg);
-    background-color: #f0e6df; /* Cor levemente diferente para o lado da resposta */
-    }
-    
-    footer {
-    background-color: #7e3e1c;
+    background-color: #778da9; /* Tom de azul sutilmente diferente para o verso */
+}
+
+footer {
+    background-color: #0d1b2a;
     padding: 15px 25px;
     color: #fff;
     text-align: center;
-    }
-    
+}
